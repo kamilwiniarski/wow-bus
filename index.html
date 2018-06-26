@@ -1,117 +1,143 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,300,800" >
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400">
-        <title>Wow!Bus</title>
-    </head>
-    <body>
-        <header class="page-header">
-           <div>
-               <img src="resources/img/logo.png" alt="Wow!Bus">
-            <nav>
-                   <ul>
-                       <li><a href="#"></a>Strona Główna</li>
-                       <li><a href="#"></a>Szukaj połączenia</li>
-                       <li><a href="#"></a>FAQ</li>
-                       <li><a href="#"></a>O nas</li>
-                       <li><a href="#"></a>Kontakt</li>
-                       <li><a href="#"><img src="resources/img/pl.png" alt="pl">PL</a></li>
-                       <li><a href="#"><img src="resources/img/en.png" alt="en">EN</a></li>
-                       <li><a href="#"><img src="resources/img/de.png" alt="de">DE</a></li>
-                   </ul>
-            </nav>
-           </div>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,300,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <title>Wow!Bus</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top nav-bar">
+            <img class="navbar-brand" src="resources/img/logo.png" alt="Wow!Bus">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse nav-box" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                    <li class="navbar-item text-link"><a class="nav-link nav-text active" href="#">Strona Główna</a></li>
+                    <li class="navbar-item text-link"><a class="nav-link nav-text active" href="#">Szukaj połączenia</a></li>
+                    <li class="navbar-item text-link"><a class="nav-link nav-text active" href="#">FAQ</a></li>
+                    <li class="navbar-item text-link"><a class="nav-link nav-text active" href="#">O nas</a></li>
+                    <li class="navbar-item text-link"><a class="nav-link nav-text active" href="#">Kontakt</a></li>
+                    <svg height="40" width="30">
+                    <line x1="15" y1="0" x2="15" y2="50" style="stroke:rgba(255,255,255,0.25);stroke-width:2" />
+                    </svg>
+                    <li class="navbar-item lang-link"><a class="nav-link nav-text active" href="#"><img src="resources/img/pl.png" alt="pl">PL</a></li>
+                    <li class="navbar-item lang-link"><a class="nav-link nav-text" href="#"><img src="resources/img/en.png" alt="en">EN</a></li>
+                    <li class="navbar-item lang-link"><a class="nav-link nav-text" href="#"><img src="resources/img/de.png" alt="de">DE</a></li>
+                </ul>
+                </div>
+
+        </nav>
+    </header>
+    <section class="page-section intro-section">
+        <header class="intro-header">
+            <h2>Podróżuj razem z nami po całej Europie!</h2>
         </header>
-        <section class="page-section intro-section">
-           <header class="intro-header">
-               <h2>Podróżuj razem z nami po całej Europie!</h2>
-           </header>
-           <form>
+        <form>
+            <label for="from">Z:</label>
+            <input type="text" placeholder="Wrocław" id="from">
+            <label for="to">Do:</label>
+            <input type="text" placeholder="Warszawa" id="to">
+            <label for="date">Odjazd:</label>
+            <input type="date" id="date"class="">
+            <button class="btn">Dodaj powrót</button>
+            <label for="amount">Ilość osób:</label>
+            <input type="number" id="amount" value="2" min="1" max="99" step="1">
+            <button class="btn">Szukaj połączenia</button>
+        </form>
 
-           </form>
+    </section>
+    <section class="page-section features-section">
+        <ul class="row">
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content row" href="#"><img class="offset-2 col-2" src="resources/img/icon-1.png" alt="option-1"><p class="col-4">Potwierdzenie rezerwacji w 5 minut</p></a></li>
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content" href="#"><img src="resources/img/icon-2.png" alt="option-2">Jeździmy 7 dni w tygodniu</a></li>
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content" href="#"><img src="resources/img/icon-3.png" alt="option-3">Bezpieczne płatności online</a></li>
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content btn text-body" href="#"><img src="resources/img/icon-4.png" alt="option-4">Co 6 przejazd gratis!</a></li>
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content btn text-body" href="#"><img src="resources/img/icon-5.png" alt="option-5">Darmowe WiFi</a></li>
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content btn text-body" href="#"><img src="resources/img/icon-6.png" alt="option-6">Nowa i sprawdzona flota</a></li>
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content btn text-body" href="#"><img src="resources/img/icon-7.png" alt="option-7">Darmowa woda</a></li>
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content btn text-body" href="#"><img src="resources/img/icon-8.png" alt="option-8">Przypomnienia SMS</a></li>
+            <li class="col-md-4 col-sm-6 single-feature"><a class="single-feature-content btn text-body" href="#"><img src="resources/img/icon-9.png" alt="option-9">Gwarancja zadowolenia</a></li>
+        </ul>
+    </section>
+    <section class="page-section text-section">
+        <div class="text-container row">
+            <div class="text-box col-3 offset-2">
+            <h3><span>Odkrywaj Europę</span> korzystając z naszych tanich biletów autobusowych</h3><br>
+            <p>Nam et sollicitudin erat. Phasellus urna nibh, elementum in enim quis, feugiat sollicitudin felis.</p> <br><p>Ut tristique rutrum viverra. Nullam vel orci aliquet, semper ex quis, bibendum erat. Integer porta, lectus nec rutrum pharetra, massa tellus sodales lacus, non pellentesque dolor quam at erat.</p>
+        </div>
+        <div class="text-box col-3 offset-1">
+            <h3><span>Wyjazdy weekendowe</span> i wakacyjne w PolskiBusik.eu</h3><br>
+            <p>Nam et sollicitudin erat. Phasellus urna nibh, elementum in enim quis, feugiat sollicitudin felis.</p><br> <p>Ut tristique rutrum viverra. Nullam vel orci aliquet, semper ex quis, bibendum erat. Integer porta, lectus nec rutrum pharetra, massa tellus sodales lacus, non pellentesque dolor quam at erat.</p>
+        </div>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="footer-container row">
+            <div class="left-box offset-2 col-2">
+                <img src="resources/img/footer-logo.png" alt="Wow!Bus">
 
-        </section>
-        <section class="page-section feature-section">
-            <ul>
-                <li><a href="#"><img src="resources/img/icon-1.png" alt="option-1">Potwierdzenie rezerwacji w 5 minut</a></li>
-                <li><a href="#"><img src="resources/img/icon-2.png" alt="option-2">Jeździmy 7 dni w tygodniu</a></li>
-                <li><a href="#"><img src="resources/img/icon-3.png" alt="option-3">Bezpieczne płatności online</a></li>
-                <li><a href="#"><img src="resources/img/icon-4.png" alt="option-4">Co 6 przejazd gratis!</a></li>
-                <li><a href="#"><img src="resources/img/icon-5.png" alt="option-5">Darmowe WiFi</a></li>
-                <li><a href="#"><img src="resources/img/icon-6.png" alt="option-6">Nowa i sprawdzona flota</a></li>
-                <li><a href="#"><img src="resources/img/icon-7.png" alt="option-7">Darmowa woda</a></li>
-                <li><a href="#"><img src="resources/img/icon-8.png" alt="option-8">Przypomnienia SMS</a></li>
-                <li><a href="#"><img src="resources/img/icon-9.png" alt="option-9">Gwarancja zadowolenia</a></li>
-            </ul>
-        </section>
-        <section class="page-section text-section">
-            <div class="text-container">
-                <h3><span>Odkrywaj Europę</span> korzystając z naszych tanich biletów autobusowych</h3>
-                <p>Nam et sollicitudin erat. Phasellus urna nibh, elementum in enim quis, feugiat sollicitudin felis.
+                <p class="find-us"><br>Znajdź nas na...</p>
+                <ul class="images row">
+                    <li class="col-1"><a href="#"><img src="resources/img/fb-logo.png" alt="Facebook"></a></li>
+                    <li class="col-1"><a href="#"><img src="resources/img/tw-logo.png" alt="Twitter"></a></li>
+                    <li class="col-1"><a href="#"><img src="resources/img/li-logo.png" alt="Linkedin"></a></li>
+                </ul>
+                <svg height="2" width="270">
+                  <line x1="0" y1="0" x2="270" y2="0" style="stroke:rgba(215, 223, 222, 0.95);stroke-width:2" />
+                </svg>
+                <p class="copy">Copyright PolskiBusik.eu 2018 &copy;. <br>All rights reserved.</p>
 
-                    Ut tristique rutrum viverra. Nullam vel orci aliquet, semper ex quis, bibendum erat. Integer porta, lectus nec rutrum pharetra, massa tellus sodales lacus, non pellentesque dolor quam at erat. </p>
             </div>
-            <div class="text-container">
-                <h3><span>Wyjazdy weekendowe</span> i wakacyjne w PolskiBusik.eu</h3>
-                <p>Nam et sollicitudin erat. Phasellus urna nibh, elementum in enim quis, feugiat sollicitudin felis.
+            <div class="right-box col-8">
+                <div class="row no-gutters">
+                    <ul class=" list offset-1 col-3">
+                    <li>Firma</li><br>
+                    <li><a class="text-body" href="#">FAQ</a></li>
+                    <li><a class="text-body" href="#">Newsletter</a></li>
+                    <li><a class="text-body" href="#">Vouchery</a></li>
+                    <li><a class="text-body" href="#">Aplikacje</a></li>
+                    <li><a class="text-body" href="#">Praca pasażerów</a></li>
+                    <li><a class="text-body" href="#">Anulowanie i zmiana biletu</a></li>
+                    <li><a class="text-body" href="#">Kontakt</a></li>
+                </ul>
+                <ul class=" list col-3">
+                    <li>Kierunki</li><br>
+                    <li><a class="text-body" href="#">Autobusy Berlin</a></li>
+                    <li><a class="text-body" href="#">Autobusy Warszawa</a></li>
+                    <li><a class="text-body" href="#">Autobusy Szczecin</a></li>
+                    <li><a class="text-body" href="#">Autobusy Londyn</a></li>
+                    <li><a class="text-body" href="#">Autobusy Rzym</a></li>
+                    <li><a class="text-body" href="#">Autobusy Paryż</a></li>
+                    <li><a class="text-body" href="#">Autobusy Amsterdam</a></li>
+                </ul>
+                <ul class=" list col-3">
+                    <li>Połączenia autobusowe</li><br>
+                    <li><a class="text-body" href="#">Autobusy Berlin - Szczecin</a></li>
+                    <li><a class="text-body" href="#">Autobusy Praga - Wrocław</a></li>
+                    <li><a class="text-body" href="#">Autobusy Wiedeń - Warszawa</a></li>
+                    <li><a class="text-body" href="#">Autobusy Berlin - Warszawa</a></li>
+                    <li><a class="text-body" href="#">Autobusy Kraków - Lwów</a></li>
+                    <li><a class="text-body" href="#">Autobusy Warszawa - Wrocław</a></li>
+                    <li><a class="text-body" href="#">Autobusy Wiedeń - Kraków</a></li>
 
-                    Ut tristique rutrum viverra. Nullam vel orci aliquet, semper ex quis, bibendum erat. Integer porta, lectus nec rutrum pharetra, massa tellus sodales lacus, non pellentesque dolor quam at erat. </p>
-            </div>
-        </section>
-        <footer class="page-footer">
-            <div class="footer-container">
-                <div class="left-box">
-                    <img src="#" alt="Wow!Bus">
-                    <p>Znajdź nas na...</p>
-                    <ul>
-                        <li><a href="#"><img src="resources/img/fb-logo.png" alt="Facebook"></a></li>
-                        <li><a href="#"><img src="resources/img/tw-logo.png" alt="Twitter"></a></li>
-                        <li><a href="#"><img src="resources/img/li-logo.png" alt="Linkedin"></a></li>
-                    </ul>
-
+                </ul>
                 </div>
-                <div class="right-box">
-                    <ul>
-                       <li>Firma</li>
-                        <li><a href="#"></a>FAQ</li>
-                        <li><a href="#"></a>Newsletter</li>
-                        <li><a href="#"></a>Vouchery</li>
-                        <li><a href="#"></a>Aplikacje</li>
-                        <li><a href="#"></a>Praca pasażerów</li>
-                        <li><a href="#"></a>Anulowanie i zmiana biletu</li>
-                        <li><a href="#"></a>Kontakt</li>
-                    </ul>
-                    <ul>
-                       <li>Kierunki</li>
-                        <li><a href="#"></a>Autobusy Berlin</li>
-                        <li><a href="#"></a>Autobusy Warszawa</li>
-                        <li><a href="#"></a>Autobusy Szczecin</li>
-                        <li><a href="#"></a>Autobusy Londyn</li>
-                        <li><a href="#"></a>Autobusy Rzym</li>
-                        <li><a href="#"></a>Autobusy Paryż</li>
-                        <li><a href="#"></a>Autobusy Amsterdam</li>
-                    </ul>
-                    <ul>
-                       <li>Połączenia autobusowe</li>
-                        <li><a href="#"></a>Autobusy Berlin - Szczecin</li>
-                        <li><a href="#"></a>Autobusy Praga - Wrocław</li>
-                        <li><a href="#"></a>Autobusy Wiedeń - Warszawa</li>
-                        <li><a href="#"></a>Autobusy Berlin - Warszawa</li>
-                        <li><a href="#"></a>Autobusy Kraków - Lwów</li>
-                        <li><a href="#"></a>Autobusy Warszawa - Wrocław</li>
-                        <li><a href="#"></a>Autobusy Wiedeń - Kraków</li>
-
-                    </ul>
-                </div>
             </div>
-        </footer>
+        </div>
+    </footer>
     <script src="resources/js/script.js"></script>
-    </body>
-    </html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</body>
 
-
+</html>
