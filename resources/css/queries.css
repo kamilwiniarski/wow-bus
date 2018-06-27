@@ -1,27 +1,40 @@
 
-/* 1024px - 1200px*/
-
-@media only screen and (max-width:1260px){
+@media only screen and (max-width:1199px){
 
 
-}
-/* 768-1023px*/
-
-@media only screen and (max-width:1023px){
-
+    .intro-header p{
+        font-size:44px;
+        width: 70%;
+    }
 
 }
 
 
-/* Small phones to small tablets 481-767px */
+@media only screen and (max-width:991px){
+
+    .intro-header{
+        height: 40%;
+    }
+    .intro-header p{
+        font-size:40px;
+    }
+
+}
 
 @media only screen and (max-width:767px){
 
 
+    .intro-header p{
+        font-size:36px;
+        width: 90%;
+    }
+
 }
-/* Small phones up to 480px*/
 
-@media only screen and (max-width:480px){
 
+@media only screen and (max-width:575px){
+    .intro-header p{
+        width: 100%;
+    }
 
 }

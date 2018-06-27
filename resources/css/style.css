@@ -52,30 +52,37 @@ body{
 
 /* SECTION ONE - INTRO */
 .intro-section{
-
     background-image:url(img/overlay.png), url(img/bg-left.png), url(img/bg-full.png); /*add filter*/
     background-repeat: no-repeat;
     background-position: top left, top left,top left;
     height: 725px;
+    position: relative;
 }
 
 .intro-header{
-  height: 10%;
-    margin-bottom: 200px;
+    height: 70%;
+}
+
+.intro-header div{
+
+    transform:translateY(50%);
+
 }
 .intro-header p{
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
     font-family: "Nunito",'sans-serif';
-    font-size:72px;
+    font-size:3.75vw;
     line-height: 1.25em;
     font-weight: 700;
     color:white;
-    transform:translateY(150%);
-
+    width: 50%;
 }
 form{
     width: 95%;
     margin: auto;
+    position: absolute;
+    bottom:32px;
+    left:2.5%;
     background-color: rgba(249, 250, 249, 0.85);
     font-size: 17px;
     font-weight: 400;
@@ -118,7 +125,7 @@ form label{
 .middle-item:last-child{
     background-color: #00ba7f;
     height: 137px;
-    margin:0 0 0 auto;
+    margin:0 15px 0 auto;
     font-family: 'Nunito', 'sans-serif';
     font-size:18px;
 }
