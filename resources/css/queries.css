@@ -3,42 +3,13 @@
 
 @media only screen and (max-width:1260px){
 
-    body{
-        font-size: 19px;
-    }
-    .mySlide{
-    }
 
-    .row{ padding: 0 2%;
-    }
 }
 /* 768-1023px*/
 
 @media only screen and (max-width:1023px){
 
-    body{font-size:18px;}
 
-    section{padding:60px 0;}
-
-    .main-nav li{
-          margin-left: 20px;
-    }
-
-    .btn-club img {
-        transform: scale(0.8);
-    }
-
-    .activity-big{
-        width: 96%;
-        margin: 1% auto;
-        }
-
-    .activity-small{
-        width: 44%;
-        margin: 1% auto;
-    }
-
-    .contact-form{width: 80%;}
 }
 
 
@@ -46,136 +17,11 @@
 
 @media only screen and (max-width:767px){
 
-    body{font-size:16px;}
 
-    section{padding:30px 0;}
-
-    .row{
-        padding: 0 4%;
-        }
-
-    .col{
-        width: 100%;
-        margin: 0 0 4% 0;
-        }
-
-    h1{font-size:250%;}
-
-    h2{font-size:140%;}
-
-    nav{
-        height: 50px;
-    }
-
-    .logo{
-        transform: scale(0.7);
-        margin-top: -79px;
-        margin-left: -70px;
-    }
-
-    .main-nav{
-        float: right;
-        margin-top:15px;
-        margin-right: -10px;
-    }
-
-    .main-nav li{
-        margin-left: 2px;
-        font-size: 80%;
-    }
-
-    .mySlide h1{
-        margin-top:80%;
-    }
-
-    .section-clubs{
-        padding-top: 40px;
-    }
-
-    .activity{
-        margin:1px auto;
-        height: 200px;
-    }
-
-   .btn-activity-short:link,
-   .btn-activity-short:visited,
-   .btn-activity-long:link,
-   .btn-activity-long:visited
-    {
-        margin-top: 150px;
-        height: 50px;
-    }
-
-    .btn-activity-short p,
-    .btn-activity-long p{
-        padding-top: 15px;
-    }
-
-    .single-plan{
-        width: 300px;
-    }
-    .personal-trainers{
-    width: 100%;
-    margin-left:0;
-    }
-
-    input[type=submit]{
-        margin-left:35%;
-    }
 }
 /* Small phones up to 480px*/
 
 @media only screen and (max-width:480px){
 
-    section{padding: 25px 0;}
 
-    contact-form{width: 100%;}
-    }
-
- nav{
-        height: 45px;
-    }
-
-    .logo{
-        transform: scale(0.65);
-        margin-top: -80px;
-        margin-left: -70px;
-    }
-
-    .main-nav{
-        float: right;
-        margin-top:12px;
-        margin-right: -10px;
-    }
-
-    .main-nav li{
-        margin-left: 2px;
-        font-size: 90%;
-    }
-
-     .activity{
-        margin:1px auto;
-        height: 180px;
-    }
-
-   .btn-activity-short:link,
-   .btn-activity-short:visited,
-   .btn-activity-long:link,
-   .btn-activity-long:visited
-    {
-        margin-top: 130px;
-        height: 50px;
-    }
-
-    .btn-activity-short p,
-    .btn-activity-long p{
-        padding-top: 15px;
-    }
-    .single-plan{
-        margin:10px auto;
-    }
-
-    .single-plan .btn{
-        font-size: 90%
-    }
 }
