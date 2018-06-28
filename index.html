@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,300,700,800">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <title>Wow! Bus</title>
 </head>
 
@@ -20,8 +20,8 @@
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-                <div class="collapse navbar-collapse nav-box" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto list-unstyled">
+            <div class="collapse navbar-collapse nav-box" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto list-unstyled">
                     <li class="navbar-item text-link"><a class="nav-link nav-text active" href="#">Strona Główna</a></li>
                     <li class="navbar-item text-link"><a class="nav-link nav-text active" href="#">Szukaj połączenia</a></li>
                     <li class="navbar-item text-link"><a class="nav-link nav-text active" href="#">FAQ</a></li>
@@ -34,114 +34,126 @@
                     <li class="navbar-item lang-link"><a class="nav-link nav-text" href="#"><img src="resources/img/en.png" alt="en">EN</a></li>
                     <li class="navbar-item lang-link"><a class="nav-link nav-text" href="#"><img src="resources/img/de.png" alt="de">DE</a></li>
                 </ul>
-                </div>
+            </div>
 
         </nav>
     </header>
     <section class="container-fluid intro-section">
         <header class="intro-header row">
             <div class=" offset-2 col-10">
-                <p>Podróżuj razem z nami po całej Europie!<p>
+                <p>Podróżuj razem z nami po całej Europie!
+                    <p>
             </div>
         </header>
         <form>
             <div class="row form-container">
                 <div class="form-item col-xl-4 col-lg-6 col-md-10 col-12">
-                <div class="row">
-                    <div class="form-item form-group offset-md-1 col-5">
-             <label for="from">Z:</label>
-            <input class="form-control" type="text" placeholder="Wrocław" id="from">
+                    <div class="row">
+                        <div class="form-item form-group offset-md-1 col-5">
+                            <label for="from">Z:</label>
+                            <input class="form-control" type="text" placeholder="Wrocław" id="from">
+                        </div>
+                        <a href="#" class="form-item middle-item col-1"><img class="img-fluid img-arrows" src="resources/img/form-2.png" alt="from-to"></a>
 
-            </div>
-            <a href="#" class="form-item middle-item col-1"><img class="img-fluid img-arrows" src="resources/img/form-2.png" alt="from-to"></a>
-
-            <div class=" form-item form-group col-5"><label for="to">Do:</label>
-            <input class="form-control" type="text" placeholder="Warszawa" id="to">
-            </div>
+                        <div class=" form-item form-group col-5"><label for="to">Do:</label>
+                            <input class="form-control" type="text" placeholder="Warszawa" id="to">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="form-item form-group col-xl-1 col-lg-2 col-md-3 col-4 offset-md-1">
-                <label for="date">Odjazd:</label>
-                 <input class="form-control" type="date" id="date" >
-            </div>
+                <div class="form-item form-group col-xl-1 col-lg-2 col-md-3 col-4 offset-md-1">
+                    <label for="date">Odjazd:</label>
+                    <input class="form-control" type="date" id="date">
+                </div>
 
-            <div class="form-item middle-item form-group col-xl-2 col-lg-2 col-md-2 col-4">
-                 <a href="#" class="btn text-body">
-                 <img src="resources/img/form-3.png" alt="plus">
-                 Dodaj powrót</a>
-            </div>
+                <div class="form-item middle-item form-group col-xl-2 col-lg-2 col-md-2 col-4">
+                    <a href="#" class="btn text-body">
+                 <img src="resources/img/form-3.png" alt="plus">Dodaj powrót</a>
+                </div>
 
-           <div class=" form-item form-group offset-xl-1  col-lg-2 col-4">
-           <label for="amount">Ilość osób:</label>
-
-            <input class="form-control" type="number" id="amount" value="2" min="1" max="99" step="1">
-
-            </div>
-
-            <div class="form-group middle-item offset-xl-2 col-xl-2 col-lg-4 col-8">
-            <a href="#" class="search">
+                <div class=" form-item form-group offset-xl-1  col-lg-2 col-4">
+                    <label for="amount">Ilość osób:</label>
+                    <input class="form-control" type="number" id="amount" value="2" min="1" max="99" step="1">
+                </div>
+                <div class="form-group middle-item offset-xl-2 col-xl-2 col-lg-4 col-8">
+                    <a href="#" class="search">
                  <img src="resources/img/form-5.png" alt="search">
                  Szukaj połączenia</a>
+                </div>
             </div>
-            </div>
-
         </form>
-
     </section>
     <section class="container-fluid features-section">
         <div class="row">
             <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
                 <div class=" row">
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-1.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Potwierdzenie rezerwacji w 5 minut</p></div>
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-1.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Potwierdzenie rezerwacji w 5 minut</p>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
                 <div class="row">
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-2.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Jeździmy 7 dni w tygodniu</p></div>
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-2.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Jeździmy 7 dni w tygodniu</p>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
                 <div class="row">
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-3.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Bezpieczne płatności online</p></div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6 col col-lg-4 single-feature"data-aos="fade-up">
-                <div class="row" >
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-4.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Co 6 przejazd gratis!</p></div>
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-3.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Bezpieczne płatności online</p>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
                 <div class="row">
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-5.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Darmowe WiFi</p></div>
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-4.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Co 6 przejazd gratis!</p>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
                 <div class="row">
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-6.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Nowa i sprawdzona flota</p></div>
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-5.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Darmowe WiFi</p>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
                 <div class="row">
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-7.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Darmowa woda</p></div>
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-6.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Nowa i sprawdzona flota</p>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
                 <div class="row">
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-8.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Przypomnienia SMS</p></div>
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-7.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Darmowa woda</p>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
                 <div class="row">
-                   <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-9.png" alt="option-1"></div>
-                    <div class="col-5 description-container"><p class="single-feature-content">Gwarancja zadowolenia</p></div>
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-8.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Przypomnienia SMS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col col-lg-4 single-feature" data-aos="fade-up">
+                <div class="row">
+                    <div class="offset-2 col-2 img-container"><img class="img-fluid" src="resources/img/icon-9.png" alt="option-1"></div>
+                    <div class="col-5 description-container">
+                        <p class="single-feature-content">Gwarancja zadowolenia</p>
+                    </div>
                 </div>
             </div>
 
@@ -150,20 +162,21 @@
     <section class="container-fluid text-section">
         <div class="text-container row">
             <div class="text-box col-xl-3 offset-xl-2 offset-md-2 col-md-4 offset-sm-1 col-sm-10 col-12" data-aos="fade-up">
-            <h3><span>Odkrywaj Europę</span> korzystając z naszych tanich biletów autobusowych</h3><br>
-            <p>Nam et sollicitudin erat. Phasellus urna nibh, elementum in enim quis, feugiat sollicitudin felis.</p> <br><p>Ut tristique rutrum viverra. Nullam vel orci aliquet, semper ex quis, bibendum erat. Integer porta, lectus nec rutrum pharetra, massa tellus sodales lacus, non pellentesque dolor quam at erat.</p>
-        </div>
-        <div class="text-box col-xl-3 offset-xl-2 offset-md-2 col-md-4 offset-sm-1 col-sm-10 col-12" data-aos="fade-up">
-            <h3><span>Wyjazdy weekendowe</span> i wakacyjne w PolskiBusik.eu</h3><br>
-            <p>Nam et sollicitudin erat. Phasellus urna nibh, elementum in enim quis, feugiat sollicitudin felis.</p><br> <p>Ut tristique rutrum viverra. Nullam vel orci aliquet, semper ex quis, bibendum erat. Integer porta, lectus nec rutrum pharetra, massa tellus sodales lacus, non pellentesque dolor quam at erat.</p>
-        </div>
+                <h3><span>Odkrywaj Europę</span> korzystając z naszych tanich biletów autobusowych</h3><br>
+                <p>Nam et sollicitudin erat. Phasellus urna nibh, elementum in enim quis, feugiat sollicitudin felis.</p> <br>
+                <p>Ut tristique rutrum viverra. Nullam vel orci aliquet, semper ex quis, bibendum erat. Integer porta, lectus nec rutrum pharetra, massa tellus sodales lacus, non pellentesque dolor quam at erat.</p>
+            </div>
+            <div class="text-box col-xl-3 offset-xl-2 offset-md-2 col-md-4 offset-sm-1 col-sm-10 col-12" data-aos="fade-up">
+                <h3><span>Wyjazdy weekendowe</span> i wakacyjne w PolskiBusik.eu</h3><br>
+                <p>Nam et sollicitudin erat. Phasellus urna nibh, elementum in enim quis, feugiat sollicitudin felis.</p><br>
+                <p>Ut tristique rutrum viverra. Nullam vel orci aliquet, semper ex quis, bibendum erat. Integer porta, lectus nec rutrum pharetra, massa tellus sodales lacus, non pellentesque dolor quam at erat.</p>
+            </div>
         </div>
     </section>
     <footer class=" container-fluid page-footer">
-        <div class="footer-container row" >
+        <div class="footer-container row">
             <div class="left-box offset-2 col-lg-2 col-sm-5" data-aos="fade-up">
                 <img src="resources/img/footer-logo.png" alt="Wow!Bus">
-
                 <p class="find-us"><br>Znajdź nas na...</p>
                 <ul class="images row list-unstyled">
                     <li class="col-1"><a href="#"><img src="resources/img/fb-logo.png" alt="Facebook"></a></li>
@@ -174,54 +187,48 @@
                   <line x1="0" y1="0" x2="270" y2="0" style="stroke:rgba(215, 223, 222, 0.95);stroke-width:2" />
                 </svg>
                 <p class="copy">Copyright PolskiBusik.eu 2018 &copy;. <br>All rights reserved.</p>
-
             </div>
             <div class="right-box offset-lg-0 col-10 offset-2 col-lg-8">
                 <div class="row no-gutters">
                     <ul class=" list list-unstyled offset-lg-1  col-lg-3 col-7" data-aos="fade-up">
-                    <li>Firma</li><br>
-                    <li><a class="text-body" href="#">FAQ</a></li>
-                    <li><a class="text-body" href="#">Newsletter</a></li>
-                    <li><a class="text-body" href="#">Vouchery</a></li>
-                    <li><a class="text-body" href="#">Aplikacje</a></li>
-                    <li><a class="text-body" href="#">Praca pasażerów</a></li>
-                    <li><a class="text-body" href="#">Anulowanie i zmiana biletu</a></li>
-                    <li><a class="text-body" href="#">Kontakt</a></li>
-                </ul>
-                <ul class=" list-unstyled list col-lg-3 col-7" data-aos="fade-up">
-                    <li>Kierunki</li><br>
-                    <li><a class="text-body" href="#">Autobusy Berlin</a></li>
-                    <li><a class="text-body" href="#">Autobusy Warszawa</a></li>
-                    <li><a class="text-body" href="#">Autobusy Szczecin</a></li>
-                    <li><a class="text-body" href="#">Autobusy Londyn</a></li>
-                    <li><a class="text-body" href="#">Autobusy Rzym</a></li>
-                    <li><a class="text-body" href="#">Autobusy Paryż</a></li>
-                    <li><a class="text-body" href="#">Autobusy Amsterdam</a></li>
-                </ul>
-                <ul class=" list-unstyled list col-lg-3 col-7" data-aos="fade-up">
-                    <li>Połączenia autobusowe</li><br>
-                    <li><a class="text-body" href="#">Autobusy Berlin - Szczecin</a></li>
-                    <li><a class="text-body" href="#">Autobusy Praga - Wrocław</a></li>
-                    <li><a class="text-body" href="#">Autobusy Wiedeń - Warszawa</a></li>
-                    <li><a class="text-body" href="#">Autobusy Berlin - Warszawa</a></li>
-                    <li><a class="text-body" href="#">Autobusy Kraków - Lwów</a></li>
-                    <li><a class="text-body" href="#">Autobusy Warszawa - Wrocław</a></li>
-                    <li><a class="text-body" href="#">Autobusy Wiedeń - Kraków</a></li>
-
-                </ul>
+                        <li><p>Firma</p></li>
+                        <li><a class="text-body" href="#">FAQ</a></li>
+                        <li><a class="text-body" href="#">Newsletter</a></li>
+                        <li><a class="text-body" href="#">Vouchery</a></li>
+                        <li><a class="text-body" href="#">Aplikacje</a></li>
+                        <li><a class="text-body" href="#">Praca pasażerów</a></li>
+                        <li><a class="text-body" href="#">Anulowanie i zmiana biletu</a></li>
+                        <li><a class="text-body" href="#">Kontakt</a></li>
+                    </ul>
+                    <ul class=" list-unstyled list col-lg-3 col-7" data-aos="fade-up">
+                        <li><p>Kierunki</p></li>
+                        <li><a class="text-body" href="#">Autobusy Berlin</a></li>
+                        <li><a class="text-body" href="#">Autobusy Warszawa</a></li>
+                        <li><a class="text-body" href="#">Autobusy Szczecin</a></li>
+                        <li><a class="text-body" href="#">Autobusy Londyn</a></li>
+                        <li><a class="text-body" href="#">Autobusy Rzym</a></li>
+                        <li><a class="text-body" href="#">Autobusy Paryż</a></li>
+                        <li><a class="text-body" href="#">Autobusy Amsterdam</a></li>
+                    </ul>
+                    <ul class=" list-unstyled list col-lg-3 col-7" data-aos="fade-up">
+                        <li><p>Połączenia autobusowe</p></li>
+                        <li><a class="text-body" href="#">Autobusy Berlin - Szczecin</a></li>
+                        <li><a class="text-body" href="#">Autobusy Praga - Wrocław</a></li>
+                        <li><a class="text-body" href="#">Autobusy Wiedeń - Warszawa</a></li>
+                        <li><a class="text-body" href="#">Autobusy Berlin - Warszawa</a></li>
+                        <li><a class="text-body" href="#">Autobusy Kraków - Lwów</a></li>
+                        <li><a class="text-body" href="#">Autobusy Warszawa - Wrocław</a></li>
+                        <li><a class="text-body" href="#">Autobusy Wiedeń - Kraków</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="resources/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="resources/js/script.js"></script>
 </body>
 
-
-
 </html>
-
-
